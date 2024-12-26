@@ -119,6 +119,8 @@ Supported games:
   * Yuu Yuu Hakusho: Makai no Tobira
   * Yuu Yuu Hakusho: Makai Touitsu
 
+Multi-game collections marked with * indicate that other drivers are used for at least some of the games in the collections. Some of these are supported using my other converters.
+
 ## To do:
   * Panning support
   * Complete support for the NES version of the sound engine and add WonderSwan support. (Both versions appear to be almost the same as the Game Boy version)
