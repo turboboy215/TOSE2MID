@@ -1,4 +1,4 @@
-This sound engine by the notorious contract developer has been found to be the most widely used driver in all GB and GBC games combined. It closely resembles its NES and Wonderswan counterparts.
+At 105 unique Game Boy and Game Boy Color games combined, this is the most widely used GB/GBC sound driver. It closely resembles its NES and Wonderswan counterparts.
 
 Channel sequence table
 ===================
