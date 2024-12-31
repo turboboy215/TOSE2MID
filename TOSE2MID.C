@@ -686,8 +686,30 @@ void song2mid(int songNum, long ptr, int chanNums)
 						/*Rest*/
 						if (highNibble >= 0x0C)
 						{
-							curDelay += curNoteLen;
-							ctrlDelay += curNoteLen;
+							if (curTrack != 3)
+							{
+								curDelay += curNoteLen;
+								ctrlDelay += curNoteLen;
+							}
+							else if (curTrack == 3)
+							{
+								if (highNibble == 0x0F)
+								{
+									curDelay += curNoteLen;
+									ctrlDelay += curNoteLen;
+								}
+								else
+								{
+									curNote = highNibble + 48;
+
+									tempPos = WriteNoteEvent(midData, midPos, curNote, curNoteLen, curDelay, firstNote, curTrack, curInst);
+									firstNote = 0;
+									midPos = tempPos;
+									curDelay = 0;
+									ctrlDelay += curNoteLen;
+								}
+							}
+
 						}
 						/*Play note*/
 						else
